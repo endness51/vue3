@@ -25,7 +25,7 @@ const getUnreadCount = async () => {
   })
 }
 
-// 跳转我的站内信
+// 跳转我的消息
 const goMyList = () => {
   push({
     name: 'MyNotifyMessage'
@@ -58,7 +58,7 @@ onMounted(() => {
         </ElBadge>
       </template>
       <ElTabs v-model="activeName">
-        <ElTabPane label="我的站内信" name="notice">
+        <ElTabPane label="我的消息" name="notice">
           <el-scrollbar class="message-list">
             <template v-for="item in list" :key="item.id">
               <div class="message-item">

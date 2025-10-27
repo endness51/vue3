@@ -21,7 +21,7 @@ export const getNotifyMessagePage = async (params: PageParam) => {
   return await request.get({ url: '/system/notify-message/page', params })
 }
 
-// 获得我的站内信分页
+// 获得我的消息分页
 export const getMyNotifyMessagePage = async (params: PageParam) => {
   return await request.get({ url: '/system/notify-message/my-page', params })
 }
